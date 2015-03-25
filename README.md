@@ -30,7 +30,10 @@ Once the extension is installed, simply use it in your code by  :
 ```php
 <?php
  use \mdscomp\NavLte;
- 
+?>```
+
+```php
+<?php
 $menuItems = [
 	 [
 		'label' => 'Parent Menu',
@@ -54,15 +57,13 @@ $menuItems = [
 				    ],
 		        ],
 		    ],
-    ],
-            ]
+    	],
+	]
 ];
 $mnu     = NavLte::begin([
 	'items' => $menuItems,
 ]);
-
 echo $mnu->renderItems();
-
 ?>```
 
 Or, if you use [yii2-admin by Misbahul Munir](https://github.com/mdmsoft/yii2-admin) :
@@ -70,13 +71,10 @@ Or, if you use [yii2-admin by Misbahul Munir](https://github.com/mdmsoft/yii2-ad
 ```php
 <?php
 $menuLst = MenuHelper::getAssignedMenu(Yii::$app->user->id);
-
 $mnu     = \mdscomp\NavLte::begin([
 	'items' => $menuLst,
 ]);
-
 echo $mnu->renderItems();
-
 ?>```
 
 [yii2-admin by Misbahul Munir](https://github.com/mdmsoft/yii2-admin) use cache, so if you want to force the cache, use "true" on "fourth" variable.
@@ -84,13 +82,10 @@ echo $mnu->renderItems();
 ```php
 <?php
 $menuLst = MenuHelper::getAssignedMenu(Yii::$app->user->id, null, null, true);
-
 $mnu     = \mdscomp\NavLte::begin([
 	'items' => $menuLst,
 ]);
-
 echo $mnu->renderItems();
-
 ?>```
 
 Because of default Yii2 Nav detect url route to set menu items to "active", you can do some trick to make this menu "active". For example :
@@ -104,14 +99,12 @@ if(Yii::$app->request->pathInfo === ''){
 	$routeSet = str_replace(Yii::$app->urlManager->suffix, '', Yii::$app->request->pathInfo);
 	$routeSet = str_replace($routeCrud, 'index', $routeSet);
 }
-
 $menuLst = MenuHelper::getAssignedMenu(Yii::$app->user->id, null, null, true);
 $mnu     = \mdscomp\NavLte::begin([
 	'items' => $menuLst,
 	'route' => $routeSet,
 ]);
 echo $mnu->renderItems();
-
 ?>```
 
 this example will remove suffix from url and then convert url with action view, create, update, or 
