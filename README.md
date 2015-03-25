@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist mdscomp/yii2-admin-lte-menu "*"
+php composer.phar require --prefer-dist "mdscomp/yii2-adminlte-menu-widget" "dev-master"
 ```
 
 or add
 
 ```
-"mdscomp/yii2-admin-lte-menu": "*"
+"mdscomp/yii2-adminlte-menu-widget": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
