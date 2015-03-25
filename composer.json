@@ -1,0 +1,24 @@
+{
+    "name": "mdscomp/yii2-admin-lte-menu",
+    "description": "Yii2 AdminLTE Menu Widget",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","adminlte"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mirdani Handoko",
+            "email": "admin@mdscomp.net",
+            "homepage": "https://www.mdscomp.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "mdmsoft/yii2-admin": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "mdscomp\\": ""
+        }
+    }
+}
