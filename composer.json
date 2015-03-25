@@ -1,9 +1,9 @@
 {
-    "name": "mdscomp/yii2-admin-lte-menu",
+    "name": "mdscomp/yii2-adminlte-menu-widget",
     "description": "Yii2 AdminLTE Menu Widget",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","adminlte"],
-    "license": "MIT",
+    "license": "BSD 3-Clause",
     "authors": [
         {
             "name": "Mirdani Handoko",
