@@ -165,10 +165,12 @@ class NavLte extends Widget {
 			$active = $this->isItemActive($item);
 		}
 
+		$topArrow = '';
 		if ($items !== null) {
 			if (is_array($items)) {
 				if (!empty($items)) {
 					Html::addCssClass($options, 'treeview');
+					$topArrow = '<i class="fa fa-angle-left pull-right"></i>';
 				}
 				if ($this->activateItems) {
 					$items = $this->isChildActive($items, $active);
@@ -181,7 +183,13 @@ class NavLte extends Widget {
 			Html::addCssClass($options, 'active');
 		}
 
-		return Html::tag('li', Html::a('<i class="fa '.$icons.'"></i><span>'.$label.'</span><i class="fa fa-angle-left pull-right"></i>', $url, $linkOptions).$items, $options);
+		$htmlA = $label;
+		if($url !== 'n/a'){
+			$htmlA = Html::a('<i class="fa '.$icons.'"></i><span>'.$label.'</span>'.$topArrow, $url, $linkOptions);
+		}
+
+		return Html::tag('li', $htmlA.$items, $options);
+
 	}
 
 	/**
