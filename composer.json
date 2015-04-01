@@ -18,7 +18,7 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "mdmsoft/yii2-admin": "~1.0"
+        "mdmsoft/yii2-admin": "1.0.*@dev"
     },
     "autoload": {
         "psr-4": {
