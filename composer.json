@@ -3,7 +3,7 @@
     "description": "Yii2 AdminLTE Menu Widget",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","adminlte"],
-    "license": "BSD 3-Clause",
+    "license": "BSD-3-Clause",
     "support": {
         "issues": "https://bitbucket.org/lietsen/mdscomp-yii2-admin-lte-menu/issues",
         "source": "https://bitbucket.org/lietsen/mdscomp-yii2-admin-lte-menu"
