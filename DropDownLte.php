@@ -95,7 +95,8 @@ class DropDownLte extends Widget {
 					$content = $label;
 					Html::addCssClass($itemOptions, 'dropdown-header');
 				} else {
-					$content = Html::a('<i class="fa fa-circle-o"></i>'.$label, $url, $linkOptions);
+					$icons   = ArrayHelper::getValue($item, 'icon', 'fa-circle-o');
+					$content = Html::a('<i class="fa '.$icons.'"></i>'.$label, $url, $linkOptions);
 				}
 			} else {
 				$submenuOptions = $options;
