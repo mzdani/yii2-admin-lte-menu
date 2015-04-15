@@ -158,6 +158,7 @@ class NavLte extends Widget {
 		$items       = ArrayHelper::getValue($item, 'items');
 		$url         = ArrayHelper::getValue($item, 'url', '#');
 		$linkOptions = ArrayHelper::getValue($item, 'linkOptions', []);
+		$linkOptions['type'] = 'ajax';
 
 		if (isset($item['active'])) {
 			$active = ArrayHelper::remove($item, 'active', false);

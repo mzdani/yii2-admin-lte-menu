@@ -89,6 +89,7 @@ class DropDownLte extends Widget {
 			$itemOptions             = ArrayHelper::getValue($item, 'options', []);
 			$linkOptions             = ArrayHelper::getValue($item, 'linkOptions', []);
 			$linkOptions['tabindex'] = '-1';
+			$linkOptions['type'] = 'ajax';
 			$url                     = array_key_exists('url', $item) ? $item['url'] : null;
 			if (empty($item['items'])) {
 				if ($url === null) {

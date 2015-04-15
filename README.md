@@ -1,5 +1,8 @@
 Yii2 AdminLTE Menu
 =============
+
+[![Latest Stable Version](https://poser.pugx.org/mdscomp/yii2-adminlte-menu-widget/v/stable.svg)](https://packagist.org/packages/mdscomp/yii2-adminlte-menu-widget) [![Total Downloads](https://poser.pugx.org/mdscomp/yii2-adminlte-menu-widget/downloads.svg)](https://packagist.org/packages/mdscomp/yii2-adminlte-menu-widget) [![Monthly Downloads](https://poser.pugx.org/mdscomp/yii2-adminlte-menu-widget/d/monthly.png)](https://packagist.org/packages/mdscomp/yii2-adminlte-menu-widget) [![Daily Downloads](https://poser.pugx.org/mdscomp/yii2-adminlte-menu-widget/d/daily.png)](https://packagist.org/packages/mdscomp/yii2-adminlte-menu-widget) [![Latest Unstable Version](https://poser.pugx.org/mdscomp/yii2-adminlte-menu-widget/v/unstable.svg)](https://packagist.org/packages/mdscomp/yii2-adminlte-menu-widget)
+
 Yii2 AdminLTE Menu Widget
 
 Installation

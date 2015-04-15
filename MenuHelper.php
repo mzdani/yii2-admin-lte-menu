@@ -3,6 +3,7 @@
 namespace mdscomp;
 
 use Yii;
+use yii\helpers\Html;
 
 /**
  * Class MenuHelper extend Yii2 Admin by Misbahul Munir
@@ -28,10 +29,19 @@ class MenuHelper extends \mdm\admin\components\MenuHelper {
 						$item['icon'] = $menu['icon'];
 					}
 
+					if($menu['options'] != null){
+						$item['options'] = eval($menu['options']);
+					}
+
+					if($menu['linkOptions'] != null){
+						$item['linkOptions'] = eval($menu['linkOptions']);
+					}
+
 					if ($menu['children'] != []) {
 						$item['items'] = $menu['children'];
 					}
 				}
+				Yii::warning($item);
 				$result[] = $item;
 				$order[]  = $menu['order'];
 			}
