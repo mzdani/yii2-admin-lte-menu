@@ -41,7 +41,6 @@ class MenuHelper extends \mdm\admin\components\MenuHelper {
 						$item['items'] = $menu['children'];
 					}
 				}
-				Yii::warning($item);
 				$result[] = $item;
 				$order[]  = $menu['order'];
 			}
