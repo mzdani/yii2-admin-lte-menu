@@ -1,5 +1,5 @@
 {
-    "name": "mdscomp/yii2-adminlte-menu-widget",
+    "name": "mzdani/yii2-adminlte-menu-widget",
     "description": "Yii2 AdminLTE Menu Widget",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","adminlte"],
