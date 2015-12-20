@@ -4,7 +4,7 @@
     "type": "yii2-extension",
     "keywords": ["yii2","extension","adminlte"],
     "license": "BSD-3-Clause",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "support": {
         "issues": "https://bitbucket.org/mzdani/mdscomp-yii2-admin-lte-menu/issues?status=new&status=open",
         "source": "https://bitbucket.org/mzdani/mdscomp-yii2-admin-lte-menu"
@@ -19,7 +19,7 @@
     ],
     "require": {
         "yiisoft/yii2": "~2.0.6",
-        "mdmsoft/yii2-admin": "~3.0"
+        "mdmsoft/yii2-admin": "~2.0"
     },
     "autoload": {
         "psr-4": {

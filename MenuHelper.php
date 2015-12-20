@@ -9,7 +9,7 @@ use yii\helpers\Html;
  * Class MenuHelper extend Yii2 Admin by Misbahul Munir
  * @package mdscomp
  */
-class MenuHelper extends \mdm\admin\classes\MenuHelper {
+class MenuHelper extends \mdm\admin\components\MenuHelper {
 	public static function normalizeMenu(&$assigned, &$menus, $callback, $parent = null) {
 		$result = [];
 		$order  = [];
