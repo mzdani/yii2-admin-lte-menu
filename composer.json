@@ -1,0 +1,29 @@
+{
+    "name": "mzdani/yii2-adminlte-menu-widget",
+    "description": "Yii2 AdminLTE Menu Widget",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","adminlte"],
+    "license": "BSD-3-Clause",
+    "version": "1.0.3",
+    "support": {
+        "issues": "https://bitbucket.org/mzdani/mdscomp-yii2-admin-lte-menu/issues?status=new&status=open",
+        "source": "https://bitbucket.org/mzdani/mdscomp-yii2-admin-lte-menu"
+    },
+    "authors": [
+        {
+            "name": "Mirdani Handoko",
+            "email": "admin@mdscomp.net",
+            "homepage": "https://www.mdscomp.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.6",
+        "mdmsoft/yii2-admin": "~3.0" 
+    },
+    "autoload": {
+        "psr-4": {
+            "mdscomp\\": ""
+        }
+    }
+}
