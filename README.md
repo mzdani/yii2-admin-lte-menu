@@ -26,4 +26,4 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-[Usage Wiki](https://bitbucket.org/lietsen/mdscomp-yii2-admin-lte-menu/wiki/Usage)
+[Usage Wiki](https://bitbucket.org/mzdani/mdscomp-yii2-admin-lte-menu/wiki/Home)
