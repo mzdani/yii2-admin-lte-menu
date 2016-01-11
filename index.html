@@ -1,1 +1,188 @@
+<<<<<<< HEAD
 My Page
+=======
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Yii2-admin-lte-menu by mzdani</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/mzdani/yii2-admin-lte-menu">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/mzdani/yii2-admin-lte-menu/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/mzdani/yii2-admin-lte-menu/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Yii2-admin-lte-menu</h1>
+          <p>Yii2 AdminLTE Menu with Yii2 Admin Support</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/mzdani">mzdani</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p><a href="https://packagist.org/packages/mdscomp/yii2-adminlte-menu-widget"><img src="https://poser.pugx.org/mdscomp/yii2-adminlte-menu-widget/v/stable" alt="Latest Stable Version"></a> <a href="https://packagist.org/packages/mdscomp/yii2-adminlte-menu-widget"><img src="https://poser.pugx.org/mdscomp/yii2-adminlte-menu-widget/downloads" alt="Total Downloads"></a> <a href="https://packagist.org/packages/mdscomp/yii2-adminlte-menu-widget"><img src="https://poser.pugx.org/mdscomp/yii2-adminlte-menu-widget/v/unstable" alt="Latest Unstable Version"></a> <a href="https://packagist.org/packages/mdscomp/yii2-adminlte-menu-widget"><img src="https://poser.pugx.org/mdscomp/yii2-adminlte-menu-widget/license" alt="License"></a></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>The preferred way to install this extension is through <a href="http://getcomposer.org/download/">composer</a>.</p>
+
+<p>Either run</p>
+
+<pre><code>php composer.phar require --prefer-dist mdscomp/yii2-admin-lte-menu "*"
+</code></pre>
+
+<p>or add</p>
+
+<pre><code>"mdscomp/yii2-admin-lte-menu": "*"
+</code></pre>
+
+<p>to the require section of your <code>composer.json</code> file.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Once the extension is installed, simply use it in your code by  :</p>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-k">use</span> <span class="pl-c1">\mdscomp\NavLte</span>;</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$menuItems</span> <span class="pl-k">=</span> [</span>
+<span class="pl-s1">     [</span>
+<span class="pl-s1">        <span class="pl-s"><span class="pl-pds">'</span>label<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>Parent Menu<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">        <span class="pl-s"><span class="pl-pds">'</span>url<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>#<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">        <span class="pl-s"><span class="pl-pds">'</span>icon<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>fa-folder<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">    ],</span>
+<span class="pl-s1">    [</span>
+<span class="pl-s1">        <span class="pl-s"><span class="pl-pds">'</span>label<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>Top Menu 1<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">        <span class="pl-s"><span class="pl-pds">'</span>url<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>#<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">        <span class="pl-s"><span class="pl-pds">'</span>icon<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>fa-folder<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">        <span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> [</span>
+<span class="pl-s1">            [</span>
+<span class="pl-s1">                <span class="pl-s"><span class="pl-pds">'</span>label<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>Children Menu<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                <span class="pl-s"><span class="pl-pds">'</span>url<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>#<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                <span class="pl-s"><span class="pl-pds">'</span>icon<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>fa-folder<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                <span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> [</span>
+<span class="pl-s1">                    [</span>
+<span class="pl-s1">                        <span class="pl-s"><span class="pl-pds">'</span>label<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>Children Menu -&gt; Children Menu<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                        <span class="pl-s"><span class="pl-pds">'</span>url<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>#<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                        <span class="pl-s"><span class="pl-pds">'</span>icon<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>fa-folder<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                    ],</span>
+<span class="pl-s1">                ],</span>
+<span class="pl-s1">            ],</span>
+<span class="pl-s1">        ],</span>
+<span class="pl-s1">    ]</span>
+<span class="pl-s1">];</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$mnu</span>     <span class="pl-k">=</span> <span class="pl-c1">NavLte</span><span class="pl-k">::</span>begin([</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-smi">$menuItems</span>,</span>
+<span class="pl-s1">]);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c1">echo</span> <span class="pl-smi">$mnu</span><span class="pl-k">-&gt;</span>renderItems();</span>
+<span class="pl-s1"></span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
+
+<p>Or, if you use <a href="https://github.com/mdmsoft/yii2-admin">yii2-admin by Misbahul Munir</a> :</p>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$menuLst</span> <span class="pl-k">=</span> <span class="pl-c1">MenuHelper</span><span class="pl-k">::</span>getAssignedMenu(<span class="pl-c1">Yii</span><span class="pl-k">::</span><span class="pl-smi">$app</span><span class="pl-k">-&gt;</span><span class="pl-smi">user</span><span class="pl-k">-&gt;</span><span class="pl-smi">id</span>);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$mnu</span>     <span class="pl-k">=</span> <span class="pl-c1">\mdscomp\</span><span class="pl-c1">NavLte</span><span class="pl-k">::</span>begin([</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-smi">$menuLst</span>,</span>
+<span class="pl-s1">]);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c1">echo</span> <span class="pl-smi">$mnu</span><span class="pl-k">-&gt;</span>renderItems();</span>
+<span class="pl-s1"></span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
+
+<p><a href="https://github.com/mdmsoft/yii2-admin">yii2-admin by Misbahul Munir</a> use cache, so if you want to force the cache, use "true" on "fourth" variable.</p>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$menuLst</span> <span class="pl-k">=</span> <span class="pl-c1">MenuHelper</span><span class="pl-k">::</span>getAssignedMenu(<span class="pl-c1">Yii</span><span class="pl-k">::</span><span class="pl-smi">$app</span><span class="pl-k">-&gt;</span><span class="pl-smi">user</span><span class="pl-k">-&gt;</span><span class="pl-smi">id</span>, <span class="pl-c1">null</span>, <span class="pl-c1">null</span>, <span class="pl-c1">true</span>);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$mnu</span>     <span class="pl-k">=</span> <span class="pl-c1">\mdscomp\</span><span class="pl-c1">NavLte</span><span class="pl-k">::</span>begin([</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-smi">$menuLst</span>,</span>
+<span class="pl-s1">]);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c1">echo</span> <span class="pl-smi">$mnu</span><span class="pl-k">-&gt;</span>renderItems();</span>
+<span class="pl-s1"></span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
+
+<p>Because of default Yii2 Nav detect url route to set menu items to "active", you can do some trick to make this menu "active". For example :</p>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-pse">&lt;?php</span><span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c">// Some of "usual" controller action</span></span>
+<span class="pl-s1"><span class="pl-smi">$routeCrud</span> <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">'</span>view<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>create<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>update<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>delete<span class="pl-pds">'</span></span>];</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c">// Replace route requested with default index on "url" menu</span></span>
+<span class="pl-s1"><span class="pl-smi">$routeSet</span> <span class="pl-k">=</span> <span class="pl-c1">str_replace</span>(<span class="pl-smi">$routeCrud</span>, <span class="pl-s"><span class="pl-pds">'</span>index<span class="pl-pds">'</span></span>, <span class="pl-c1">Yii</span><span class="pl-k">::</span><span class="pl-smi">$app</span><span class="pl-k">-&gt;</span><span class="pl-smi">requestedRoute</span>);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$menuLst</span> <span class="pl-k">=</span> <span class="pl-c1">MenuHelper</span><span class="pl-k">::</span>getAssignedMenu(<span class="pl-c1">Yii</span><span class="pl-k">::</span><span class="pl-smi">$app</span><span class="pl-k">-&gt;</span><span class="pl-smi">user</span><span class="pl-k">-&gt;</span><span class="pl-smi">id</span>, <span class="pl-c1">null</span>, <span class="pl-c1">null</span>, <span class="pl-c1">true</span>);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-smi">$mnu</span>     <span class="pl-k">=</span> <span class="pl-c1">\mdscomp\</span><span class="pl-c1">NavLte</span><span class="pl-k">::</span>begin([</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-smi">$menuLst</span>,</span>
+<span class="pl-s1">    <span class="pl-s"><span class="pl-pds">'</span>route<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-smi">$routeSet</span>,</span>
+<span class="pl-s1">]);</span>
+<span class="pl-s1"></span>
+<span class="pl-s1"><span class="pl-c1">echo</span> <span class="pl-smi">$mnu</span><span class="pl-k">-&gt;</span>renderItems();</span>
+<span class="pl-s1"></span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span></pre></div>
+
+<p>this example will remove suffix from url and then convert url with action view, create, update, or 
+delete, to "index". So, if your url http://local/some/view.php, it will be use to "some/index" to 
+match the menu. Of course this is "stupid", but this is the best what I get till now. Maybe you can 
+give me some advice.</p>
+
+<p>In the AdminLte preview page, there is item with name "Main Navigation" on right side menu, she doesn't have url, and look different with other. And because I don't use "Top Bar" menu, I can use this code to generate menu item without href. So, menu won't show </p>
+
+<div class="highlight highlight-text-html-basic"><pre>
+&lt;<span class="pl-ent">a</span>&gt;&lt;/<span class="pl-ent">a</span>&gt;</pre></div>
+
+<div class="highlight highlight-text-html-php"><pre><span class="pl-s1"></span>
+<span class="pl-s1">        <span class="pl-k">&lt;</span>?<span class="pl-k">=</span></span>
+<span class="pl-s1">        <span class="pl-c1">NavLte</span><span class="pl-k">::</span>widget([</span>
+<span class="pl-s1">            <span class="pl-s"><span class="pl-pds">'</span>encodeLabels<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-c1">false</span>,</span>
+<span class="pl-s1">            <span class="pl-s"><span class="pl-pds">'</span>items<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> [</span>
+<span class="pl-s1">                [</span>
+<span class="pl-s1">                    <span class="pl-s"><span class="pl-pds">'</span>label<span class="pl-pds">'</span></span>   <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>&lt;strong&gt;Some Text With Html&lt;/strong&gt;<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                    <span class="pl-s"><span class="pl-pds">'</span>url<span class="pl-pds">'</span></span>     <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>n/a<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                    <span class="pl-s"><span class="pl-pds">'</span>options<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> [</span>
+<span class="pl-s1">                        <span class="pl-s"><span class="pl-pds">'</span>class<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>header<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                        <span class="pl-s"><span class="pl-pds">'</span>style<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>text-align: center;<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                    ]</span>
+<span class="pl-s1">                ],</span>
+<span class="pl-s1">                [</span>
+<span class="pl-s1">                    <span class="pl-s"><span class="pl-pds">'</span>label<span class="pl-pds">'</span></span> <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>Item Without URL<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                    <span class="pl-s"><span class="pl-pds">'</span>url<span class="pl-pds">'</span></span>   <span class="pl-k">=&gt;</span> <span class="pl-s"><span class="pl-pds">'</span>n/a<span class="pl-pds">'</span></span>,</span>
+<span class="pl-s1">                ],          </span>
+<span class="pl-s1">            ],</span>
+<span class="pl-s1">        ]);</span>
+<span class="pl-s1">        </span><span class="pl-pse"><span class="pl-s1">?</span>&gt;</span>
+</pre></div>
+
+<p>Explore this code, and I'm sorry, I'm not an expert. :)</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
+>>>>>>> 9416d4fcd51d6d8b0a99cb0b00e9106ffc5872e8
