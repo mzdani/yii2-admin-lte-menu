@@ -1,18 +1,20 @@
 <?php
 /**
- * @link      http://www.yiiframework.com/
- * @copyright Copyright (c) 2008 Yii Software LLC
- * @license   http://www.yiiframework.com/license/
+ * @project     Yii2 AdminLTE Menu Widget
+ * @filename    NavLte.php
+ * @author      Mirdani Handoko <mirdani.handoko@gmail.com>
+ * @copyright   copyright (c) 2015, Mirdani Handoko
+ * @license     BSD-3-Clause
  */
 
-namespace mdscomp;
+namespace mzdani;
 
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\bootstrap\Widget;
-use mdscomp\DropDownLte;
+use mzdani\DropDownLte;
 use yii\bootstrap\BootstrapAsset;
 
 /**

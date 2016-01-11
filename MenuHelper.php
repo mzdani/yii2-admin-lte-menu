@@ -1,13 +1,20 @@
 <?php
+/**
+ * @project     Yii2 AdminLTE Menu Widget
+ * @filename    MenuHelper.php
+ * @author      Mirdani Handoko <mirdani.handoko@gmail.com>
+ * @copyright   copyright (c) 2015, Mirdani Handoko
+ * @license     BSD-3-Clause
+ */
 
-namespace mdscomp;
+namespace mzdani;
 
 use Yii;
 use yii\helpers\Html;
 
 /**
  * Class MenuHelper extend Yii2 Admin by Misbahul Munir
- * @package mdscomp
+ * @package mzdani
  */
 class MenuHelper extends \mdm\admin\components\MenuHelper {
 	public static function normalizeMenu(&$assigned, &$menus, $callback, $parent = null) {

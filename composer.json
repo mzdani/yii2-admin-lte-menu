@@ -4,16 +4,16 @@
     "type": "yii2-extension",
     "keywords": ["yii2","extension","adminlte"],
     "license": "BSD-3-Clause",
-    "version": "1.0.7",
+    "version": "v1.0.8",
     "support": {
         "issues": "https://github.com/mzdani/yii2-admin-lte-menu/issues",
-        "source": "http://mzdani.github.io/yii2-adminlte-menu"
+        "source": "https://github.com/mzdani/yii2-admin-lte-menu"
     },
     "authors": [
         {
             "name": "Mirdani Handoko",
-            "email": "admin@mdscomp.net",
-            "homepage": "https://www.mdscomp.net",
+            "email": "mirdani.handoko@gmail.com",
+            "homepage": "http://mzdani.github.io/yii2-adminlte-menu",
             "role": "Developer"
         }
     ],
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mdscomp\\": ""
+            "mzdani\\": ""
         }
     }
 }

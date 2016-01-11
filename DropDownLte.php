@@ -1,11 +1,13 @@
 <?php
 /**
- * @link      http://www.yiiframework.com/
- * @copyright Copyright (c) 2008 Yii Software LLC
- * @license   http://www.yiiframework.com/license/
+ * @project     Yii2 AdminLTE Menu Widget
+ * @filename    DropDownLte.php
+ * @author      Mirdani Handoko <mirdani.handoko@gmail.com>
+ * @copyright   copyright (c) 2015, Mirdani Handoko
+ * @license     BSD-3-Clause
  */
 
-namespace mdscomp;
+namespace mzdani;
 
 use yii\base\InvalidConfigException;
 use yii\helpers\ArrayHelper;
