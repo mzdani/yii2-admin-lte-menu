@@ -4,7 +4,7 @@
     "type": "yii2-extension",
     "keywords": ["yii2","extension","adminlte"],
     "license": "BSD-3-Clause",
-    "version": "v1.0.8",
+    "version": "1.0.8",
     "support": {
         "issues": "https://github.com/mzdani/yii2-admin-lte-menu/issues",
         "source": "https://github.com/mzdani/yii2-admin-lte-menu"
