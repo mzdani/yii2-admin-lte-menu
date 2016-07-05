@@ -173,7 +173,7 @@ class NavLte extends Widget {
 			if (is_array($items)) {
 				if (!empty($items)) {
 					Html::addCssClass($options, 'treeview');
-					$topArrow = '<i class="fa fa-angle-left pull-right"></i>';
+					$topArrow = '<i class="fa fa-angle-left pull-right-container"></i>';
 				}
 				if ($this->activateItems) {
 					$items = $this->isChildActive($items, $active);
