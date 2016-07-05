@@ -104,7 +104,7 @@ class DropDownLte extends Widget {
 			} else {
 				$submenuOptions = $options;
 				unset($submenuOptions['id']);
-				$content = Html::a('<i class="fa '.$icons.'"></i><span>'.$label.'</span><i class="fa fa-angle-left pull-right"></i>', $url === null ? '#' : $url, $linkOptions).$this->renderItems($item['items'], $submenuOptions);
+				$content = Html::a('<i class="fa '.$icons.'"></i><span>'.$label.'</span><i class="fa fa-angle-left pull-right-container"></i>', $url === null ? '#' : $url, $linkOptions).$this->renderItems($item['items'], $submenuOptions);
 				Html::addCssClass($itemOptions, 'treeview');
 			}
 
